@@ -13,17 +13,22 @@
 # "buzz" if n is divisible by 5
 # "fizzbuzz" if n is divisible by both 3 and 5
 
-
-def fizzbuzz(n: int):
-	print_value = n
+def fizzbuzz(n: int) -> str:
+	"""
+		Given an int >= 0, returns the following:
+		"fizz" if n is divisible by 3
+		"buzz" if n is divisible by 5
+		"fizzbuzz" if n is divisible by both 3 and 5
+		str(n) if n does not meet any other test cases
+	"""
+	output_value = str(n)
 	if (n % 3 == 0) and (n % 5 == 0):
-		print_value = "fizzbuzz"
+		output_value = "fizzbuzz"
 	elif n % 3 == 0:
-		print_value = "fizz"
+		output_value = "fizz"
 	elif n % 5 == 0:
-		print_value = "buzz"
-	print(print_value)
-	return print_value
+		output_value = "buzz"
+	return output_value
 
 
 # -----END FIZBUZZ CODE-----
