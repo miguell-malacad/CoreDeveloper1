@@ -8,29 +8,23 @@
 
 # -----FIZZBUZZ CODE HERE-----
 
-# Given an int >= 0, prints the following:
-# "fizz" if n is divisible by 3
-# "buzz" if n is divisible by 5
-# "fizzbuzz" if n is divisible by both 3 and 5
 
 def fizzbuzz(n: int) -> str:
-	"""
-		Given an int >= 0, returns the following:
-		"fizz" if n is divisible by 3
-		"buzz" if n is divisible by 5
-		"fizzbuzz" if n is divisible by both 3 and 5
-		str(n) if n does not meet any other test cases
-	"""
-	output_value = str(n)
-	if (n % 3 == 0) and (n % 5 == 0):
-		output_value = "fizzbuzz"
-	elif n % 3 == 0:
-		output_value = "fizz"
-	elif n % 5 == 0:
-		output_value = "buzz"
-	return output_value
-
-
+    """
+            Given an int >= 0, returns the following:
+            "fizz" if n is divisible by 3
+            "buzz" if n is divisible by 5
+            "fizzbuzz" if n is divisible by both 3 and 5
+            str(n) if n does not meet any other test cases
+    """
+    output = str(n)
+    if (n % 3 == 0) and (n % 5 == 0):
+        output = "fizzbuzz"
+    elif n % 3 == 0:
+        output = "fizz"
+    elif n % 5 == 0:
+        output = "buzz"
+    return output
 # -----END FIZBUZZ CODE-----
 
 # EXERCISE 2:
